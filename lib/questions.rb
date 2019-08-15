@@ -156,7 +156,8 @@ end
 # it as a array of letters, in alphabetical order
 # . e.g. the array ['cat', 'dog', 'fish'] becomes
 # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
-def get_all_letters_in_array_of_words(array)	
+def get_all_letters_in_array_of_words(array)
+	array.join.chars.sort	
 end
 
 # BONUS SECTION
