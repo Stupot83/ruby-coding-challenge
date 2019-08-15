@@ -194,10 +194,13 @@ def call_method_from_string(str_method)
 	send(str_method)
 end
 
-# return true if the date is a uk bank holiday for 2014
+# return true if the date is a uk bank holiday for 2018
 # the list of bank holidays is here:
 # https://www.gov.uk/bank-holidays
 def is_a_2018_bank_holiday?(date)
+	date = date.strftime '%-Y/%-m/%-d'
+  	bank_holidays = ['2018/1/1', '2018/3/30', '2018/4/2', '2018/5/7', '2018/5/28', '2018/8/27', '2018/12/25', '2018/12/26']
+  	bank_holidays.include?(date)
 end
 
 # given your birthday this year, this method tells you
