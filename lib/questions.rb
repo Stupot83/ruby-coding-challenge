@@ -91,6 +91,7 @@ end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
+	array.select { |word| word =~ /\A[aeiou]/i }
 end
 
 
